@@ -1,3 +1,4 @@
+/* Slightly modified code from Mary Anne Cook's Front-Trends live coding */
 ;(function(){
     var Game = function(canvasId){
         var canvas = document.getElementById(canvasId);
@@ -94,7 +95,7 @@
             this.center.x += this.speedX;
             this.patrolX += this.speedX;
 
-            if(Math.random() > 0.994 && !this.game.invadersBelow(this)){
+            if(Math.random() > 0.964 && !this.game.invadersBelow(this)){
                 var bullet = new Bullet({x: this.center.x, y: this.center.y + this.size.x - 2},
                 { x: Math.random() - 0.5, y: 2});
                 this.game.addBody(bullet);
