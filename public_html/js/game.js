@@ -66,7 +66,7 @@
         
         draw: function(screen){
             body = this;
-            screen.fillStyle = "#0000FF";
+            screen.fillStyle = "#00FF00";
             screen.fillRect(body.center.x - body.size.x / 2,
             body.center.y - body.size.y / 2,
             body.size.x, body.size.y);
@@ -115,8 +115,8 @@
 
     var createInvaders = function(game){
         var invaders = [];
-        for(var i = 0; i < 24; i++){
-            var x = 30+ (i%8) * 50;
+        for(var i = 0; i < 42; i++){
+            var x = 30+ (i%14) * 50;
             var y = 30+ (i%3) * 50;
             invaders.push(new Invader(game, { x: x, y: y}));
         }
